@@ -1,241 +1,229 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>BaldozanoFlexbox9</title>
-  
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    
-    body {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding: 5px;
-      height: calc(100vh - 10px);
-    }
-    
-    nav, main, aside, footer {
-      border: 1px solid black;
-    }
-    
-    nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .navcont1 {
-      display: flex;
-      justify-content: space-between;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navcont2 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navredbox {
-      background-color: red;
-      height: 30px;
-      width: 30px;
-    }
-    
-    .navbigbox {
-      background-color: red;
-      height: 30px;
-      width: 60px;
-    }
-    
-    .container {
-      display: flex;
-      gap: 5px;
-      flex-grow: 1;
-    }
-    
-    main {
-      display: flex;
-      flex-grow: 1;
-      gap: 5px;
-      padding: 5px;
-      flex-direction: row;
-    }
-    
-    .maincont {
-      display: flex;
-      flex-grow: 2;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      justify-content: flex-start;
-   
-    }
-    
-    .mainitems {
-      border: 1px solid black;
-      height: 130px;
-      width: 900px;
-      justify-content: space-evenly;
-    }
-    
-    aside {
-    width: 25vw;
-		display: flex;
-		flex-direction: column;
-		padding: 4px;
-		gap: 8px;
-    height: auto;
-		overflow: auto;
-    }
-    .asidecont {
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .asideitems {
-      border: 1px solid black;
-      height: 25px;
-      padding: 4px;
-    }
-
-    .footercont{
-      display: flex;
-      gap: 5px;
-      justify-content: flex-end;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        gap: 4px;
-        padding: 4px;
-        height: auto;
-        width: calc(100% - 10px);
-        gap: 5px;
-    }
-
-    .cont1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 5px;
-      width: calc(100% - 10px)
-    }
-    .footerlogo {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-      flex-direction: row;
-    }
-    .footertext {
-      display: flex;
-      gap: 5px;
-      align-items: flex-start;
-      flex-direction: column;
-    }
-    
-    
-    
-    .footerredbox {
-      background-color: red;
-      height: 30px;
-      width: 30px;
-    }
-    
-    .footer2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .footer2boxes {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 4px;
-    }
-    
-    .footer2redbox {
-      background-color: red;
-      height: 20px;
-      width: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaldozanoFlexbox 9</title>
 </head>
 
-<body>  
-<nav>
-  <div class="navcont1">
-    <div class="navredbox"></div>
-    <div>FLEXBOX</div>
-  </div>
-  
-  <div class="navcont2">
-    <div class="navbigbox"></div>
-    <div class="navbigbox"></div>
-    <div class="navbigbox"></div>
-    <div class="navbigbox"></div>
-  </div>
-</nav>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
 
-<div class="container">
-    <aside>
-        <div class="asidecont">
-          
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div>
-            <div class="asideitems"></div></div>
-      </aside>
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
 
-<div class="cont1"> 
-    <main>
-      <div class="maincont">
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-    </div>
-      
-    </main>
-    
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid black;
+        padding: 4px;
+    }
 
-    <footer>
-        <div class="footerlogo">
-            <div class="footerredbox"></div>
-            <div class="footertext">
-                <div>FLEXBOX</div>
-                <div>COPYRIGHT FLEXBOX</div>
-            </div>
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .l {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .r {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
+    }
+
+    .allcontainer {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+
+
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+    }
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 30px;
+        width: 20vw;
+    }
+
+    .twokulukoy {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+
+    }
+
+    .mainboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .mupper {
+
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .mlower {
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .footermain {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
+        
+    }
+   
+
+    .rightfooter {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .footercube {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .leftfooter{
+        display: flex;
+        gap: 4px;
+        
+    }
+    .boxes{
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="l">
+            <div class="navbox"></div>
+            <div>Flexbox</div>
+        </div>
+
+        <div class="r">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="allcontainer">
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+
+        <div class="twokulukoy">
+
+            <main>
+                <div class="mainboxes">
+                    <div>
+                        <div class="mupper"></div>
+                    </div>
+                    <div>
+                        <div class="mlower"></div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="footermain">
+                    <div class="rightfooter">
+                        <div class="footercube"></div>
+
+                        <div class="down">
+                            <div>FLEXBOX</div>
+                            <div>COPYRIGHT FLEXBOX</div>
+                        </div>
+                    </div>
+
+                    <div class="leftfooter">
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                    </div>
+                </div>
+            </footer>
 
         </div>
-        <div class="footer2boxes">
-            <div class="footer2redbox"></div>
-            <div class="footer2redbox"></div>
-            <div class="footer2redbox"></div>
-            <div class="footer2redbox"></div>
-    </div></footer>
-</div>
-</div>
-</body></html>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

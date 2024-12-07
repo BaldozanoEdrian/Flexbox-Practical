@@ -1,252 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"></html>
 
-  <title>BaldozanoFlexbox3</title>
-  
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    
-    body {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding: 5px;
-      height: calc(100vh - 10px);
-    }
-    
-    nav, main, aside, footer {
-      border: 1px solid black;
-    }
-    
-    nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .navcont1 {
-      display: flex;
-      justify-content: space-between;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navcont2 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .navredbox {
-      background-color: red;
-      height: 30px;
-      width: 30px;
-    }
-    
-    .navbigbox {
-      background-color: red;
-      height: 30px;
-      width: 60px;
-    }
-    
-    .container {
-      display: flex;
-      gap: 5px;
-      flex-grow: 1;
-    }
-    
-    main {
-      display: flex;
-      flex-grow: 1;
-      gap: 5px;
-      padding: 5px;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-    
-    .maincont1, .maincont2 {
-      border: 1px solid black;
-    }
-    
-    .maincont1 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 5px;
-      padding: 5px;
-    }
-    
-    .mainitems {
-      border: 1px solid black;
-      height: 90px;
-      width: 90px;
-    }
-    
-    .maincont2 {
-      display: flex;
-      flex-wrap:wrap;
-      flex-direction: row;
-      gap: 5px;
-      padding: 10px;
-      justify-content: space-between;
-    }
-    
-    .main2items {
-      border: 1px solid black;
-      height: 150px;
-      width: 200px;
-    }
-    
-    aside {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 4px;
-    }
-    
-    .asideitem {
-      border: 1px solid black;
-      height: 30px;
-      width: 15vw;
-    }
-    
-    footer {
-      display: flex;
-      flex-direction: column;
-      padding: 4px;
-    }
-    
-    .footer1 {
-      display: flex;
-      gap: 4px;
-      padding: 4px;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    
-    .footercont1 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
-    }
-    
-    .footer1redbox {
-      background-color: red;
-      height: 40px;
-      width: 40px;
-    }
-    
-    .footer2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 4px;
-    }
-    
-    .footercont2 {
-      display: flex;
-      gap: 5px;
-    }
-    
-    .footer2boxes {
-      display: flex;
-      flex-direction: row;
-      gap: 4px;
-    }
-    
-    .footer2redbox {
-      background-color: red;
-      height: 20px;
-      width: 20px;
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaldozanoFlexbox 3</title>
 </head>
 
-<body>  
-<nav>
-  <div class="navcont1">
-    <div class="navredbox"></div>
-    <div>FLEXBOX</div>
-  </div>
-  
-  <div class="navcont2">
-    <div class="navbigbox"></div>
-    <div class="navbigbox"></div>
-  </div>
-</nav>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-<div class="container">
-  <main>
-    <div class="maincont1">
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
-      <div class="mainitems"></div>
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        height: calc(100vh - 8px);
+        gap: 4px;
+    }
+
+    nav,
+    aside,
+    main,
+    footer,
+    .asideright {
+        padding: 4px;
+        border: 1px solid black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    .navleft {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .navright {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
+    }
+
+    .middle {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 30px;
+        width: 14vw;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+
+        gap: 4px;
+    }
+
+    .main1 {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 4px;
+        gap: 2px;
+        align-self: center;
+    }
+
+    .mid6 {
+        border: 1px solid black;
+        height: 24vh;
+        width: 8vw;
+
+    }
+
+    .asideright {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .asideboxers {
+        display: flex;
+        border: 1px solid black;
+        width: 14vw;
+        flex-grow: 1;
+
+    }
+
+    .footerc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+
+    }
+
+    .footercubes {
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="navleft">
+            <div class="navbox"></div>
+            <div class="navflexword">Flexbox</div>
+        </div>
+
+        <div class="navright">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="middle">
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+
+        <main>
+            <div class="main1">
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+                <div class="mid6"></div>
+            </div>
+        </main>
+
+        <div class="asideright">
+            <div class="asideboxers"></div>
+            <div class="asideboxers"></div>
+            <div class="asideboxers"></div>
+        </div>
     </div>
-    
-    <div class="maincont2">
-      <div class="main2items"></div>
-      <div class="main2items"></div>
-      <div class="main2items"></div>
-    </div>
-  </main>
-  <aside>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-    <div class="asideitem"></div>
-  </aside>
-</div>
 
-<footer>
-  <div class="footer1">
-    <div class="footercont1">
-      <div class="footer1redbox"></div>
-      <div>FLEXBOX</div>
-    </div>
-  </div>
+    <footer>
+        <div class="footerc">
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+            <div class="footercubes"></div>
+        </div>
+        <div>
+            <div class="copyright">©Copyright Flexbox</div>
+        </div>
 
-<hr>
 
- <div class="footer2">
-  <div class="footer2boxes">
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-    <div class="footer2redbox"></div>
-  </div>
-  
-  <div>©Copyright All rights reserved.</div>
- </div>
-</footer>
+    </footer>
+
 </body>
+
 </html>
