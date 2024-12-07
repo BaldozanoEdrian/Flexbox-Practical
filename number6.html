@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaldozanoFlexbox6</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.navleft {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.navright {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.redbox {
+    background: red;
+    height: 30px;
+    width: 30px;
+}
+
+.redrectangle {
+    background: red;
+    height: 20px;
+    width: 35px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 4px;
+    gap: 4px;
+}
+
+.mainbox {
+    display: flex;
+    padding: 4px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 50%;
+    align-content: flex-start;
+}
+
+.mainbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.asidebox {
+    display: flex;
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+}
+
+.smallboxes {
+    border: 1px solid black;
+    height: 90px;
+    width: 90px;
+}
+
+.bigbox {
+    border: 1px solid black;
+    height: 190px;
+    width: 250px;
+}
+
+footer {
+    gap: 4px;
+}
+
+.footertop{
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+}
+
+.footerbot {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.redboxes {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+.smallbox {
+    background: red;
+    height: 10px;
+    width: 10px;
+}
+
+</style>
+
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="navright">
+            <div class="redrectangle"></div>
+            <div class="redrectangle"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <main>
+            <div class="mainbox">
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+            </div>
+            <div class="mainbox mainbox1">
+                <div class="bigbox"></div>
+                <div class="bigbox"></div>
+                <div class="bigbox"></div>
+                <div class="bigbox"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footertop">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div class="footerbot">
+            <div class="redboxes">
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+            </div>
+            <div class="text">
+                <p>@Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

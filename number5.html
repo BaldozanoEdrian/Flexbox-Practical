@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaldozanoFlexbox5</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 2px;
+            height: calc(100vh - 4px);
+        }
+
+        nav, main, aside, footer {
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .navcont1 {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .navredbox {
+            background-color: red;
+            height: 30px;
+            width: 30px;
+        }
+
+        .navcont2 {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .navredbox2 {
+            background-color: red;
+            height: 30px;
+            width: 60px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 4px;
+        }
+
+        main {
+           display: flex;
+           flex-wrap: wrap;
+           flex-grow: 1;
+           gap: 5px;
+           padding: 5px;
+           align-items: center;
+           justify-content: space-around;
+       }
+       
+        .maincont1, .maincont2 {
+           border: 1px solid black;
+    }
+        
+        .maincont1 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 310px;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        .mainbox1 {
+            height: 70px;
+            border: 1px solid black;
+            width: 70px;
+        }
+          
+          
+        .maincont2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 310px;
+            gap: 5px;
+            padding: 5px;
+        }
+          
+        .mainbox2 {
+            height: 70px;
+            border: 1px solid black;
+            width: 70px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .asideitem {
+            border: 1px solid black;
+            width: 15vw;
+            height: 35px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footercont1 {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: center;
+            margin-left: 4px;
+        }
+
+        .flexcprt {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footerredbox {
+            background-color: red;
+            height: 30px;
+            width: 30px;
+        }
+
+        .footercont2 {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: center;
+            margin-right: 4px;
+        }
+
+        .footerredbox2 {
+            background-color: red;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navcont1">
+            <div class="navredbox"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div class="navcont2">
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+            <div class="navredbox2"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <main>
+            <div class="maincont1">
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+              <div class="mainbox1"></div>
+            </div>
+
+            <div class="maincont2">
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+                <div class="mainbox2"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+            <div class="asideitem"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footercont1">
+            <div class="footerredbox"></div>
+            <div class="flexcprt">
+                <div>FLEXBOX</div>
+                <div>©Copyright All rights reserved.</div>
+            </div>
+        </div>
+
+        <div class="footercont2">
+            <div class="footerredbox2"></div>
+            <div class="footerredbox2"></div>
+            <div class="footerredbox2"></div>
+            <div class="footerredbox2"></div>
+            <div class="footerredbox2"></div>
+        </div>
+    </footer>
+
+
+</body></html>
